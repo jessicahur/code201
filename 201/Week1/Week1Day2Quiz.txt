@@ -1,0 +1,6 @@
+1.  <link type="text/css" rel="stylesheet" href="mystyle.css"/>
+2.  JavaScipt provides interactivity to web pages.  It does this by interacting with the DOM to make changes/updates.
+3.  ls = list files/directories; mv move; cd change directory; touch create new file
+4.  HTML elements are used to provide structure to a web page/document.
+5.  Arrays are used to store data.  Data in an array can be of different types.  A variable is used to stor a value.
+6.  Data types in Javascript include number, string, boolean.

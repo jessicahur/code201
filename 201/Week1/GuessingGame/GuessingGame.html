@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>The Guessing Game</title>
+	</head>
+	<body>
+		<script>
+			var amountOfCorrectAnswers = 0;
+			var indexOfWrongAnswers = [];
+			var finalResponsesToUser = ["You got question #1 wrong, I like to backpack",
+							"You got question #2 wrong, I like to run", "You got question #3 wrong, I like to cook"];
+
+			confirm("Welcome to the Guessing Game.  Are you ready to play");
+			var firstQuestionResponse= prompt("Do you think I like to backpack").toUpperCase();
+			if(firstQuestionResponse === "YES"){
+				amountOfCorrectAnswers += 1;
+			} else  {
+				indexOfWrongAnswers.push(0);
+			}
+	
+			var secondQuestionResponse= prompt("Do you think I like to run").toUpperCase();
+			if(secondQuestionResponse === "YES"){
+				amountOfCorrectAnswers += 1;
+			} else {
+				indexOfWrongAnswers.push(1);
+			} 
+
+			var thirdQuestionResponse= prompt("Do you think I like to run").toUpperCase();
+			if(thirdQuestionResponse === "YES"){
+				amountOfCorrectAnswers += 1;
+			} else {
+				indexOfWrongAnswers.push(2);
+			} 
+			//debugging to make sure push command is working
+			console.log("This is how many wrong answers were added: " + indexOfWrongAnswers.length);
+			//debugging to make sure correct answers are being recorded
+			console.log("This is how many correct answers were added: " + amountOfCorrectAnswers);
+			
+			alert("You got " + amountOfCorrectAnswers + " of 3 answers correct");
+			if (indexOfWrongAnswers.length === 0) {
+				alert("Congratulations, you got all the answers correct");
+			} else {
+				for(i = 0; i < indexOfWrongAnswers.length; i++ ) {
+					var wrongAnswer = indexOfWrongAnswers[i];
+					alert(finalResponsesToUser[wrongAnswer]);
+				};
+			}
+
+		</script>
+	</body>
+<html>

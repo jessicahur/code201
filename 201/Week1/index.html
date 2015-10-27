@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Week1_Day1_Homework</title>
+	</head>
+	<body>
+		<h2>An analysis of the JS code on this page</h2>
+		<p>Todays homework assignment is to complete the JS code on this page and then to use other html elments to describe what the code is doing.  So I am going to explain the following:<p/>
+			<ul>
+				<li>The use of the <em> prompt </em>keyword</li>
+				<li>A simple debug output to <em>console</em></li>
+				<li>The <em>alert </em> keyword</li>
+			</ul>
+		<h3>Prompt</h3>
+		<p><b>var userName = prompt("What is your name?")</b><br>The prompt is a useful method for gathering user input.  The prompt command will cause a window to pop up for the user, so they can provide input.  In this code, The Prompt that the user sees is "What is your name".  We are saving the user input entered at the prompt, to the variable userName.  By saving the input to a variable, we are going to be able to use the data for providing simple debug statements and to help generate an alert for the user.</p>
+		<h3>Console Output and Debug</h3>
+		<p><b>console.log("you entered your name as: " + userName);</b><br>Leveraging the variable we assigned the prompt value to in the previous paragraph, we can provide a simple debug to console.  This is a simplistic, but good enough solution for now.  In this case, using the "Console.log" command, we use some basic text string to provide a message.  We concatednate the value of the UserName variable to the string, showing what was entered at the prompt by the end user.</p>
+		<h3>The Alert Keyword</h3>
+		<p><b>alert("It is nice to meet you " + userName + ", I hope you are having a good day");</b><br>The last line of code uses the "alert" keyword to provide the end user some feedback.  In this case we have two default strings.  Between those two strings, you will see that we have the variable name that we declared/defined in the first line of code (Username).  We concatenate the two strings and the value of the userName that the end user provided.  </p>
+		<script>
+			var userName = prompt("What is your name?");
+			console.log("you entered your name as: " + userName);
+			alert("It is nice to meet you " + userName + ", I hope you are having a good day");
+		</script>
+	</body>
+</html>

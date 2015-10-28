@@ -10,20 +10,11 @@ var correctAnswerArray = ["You answered question 1 correctly, I do enjoy backpac
 
 confirm("Welcome to the Guessing Game.  Are you ready to play?");
 
-/*
-Add in error correction
-
-What if your user enters 'Y' instead of 'yes'? Or 'y' or 'YES'? Does your game still
-work correctly? It shouldn't. We need to build in some error correction. In your 'if'
-statements, where you are testing the user response, you need to add in && cases to your
-condition, such that Y/y/YES/yes or N/n/NO/no are all accounted for. Once this is working,
-and you have systematically tested all four possibilities on each question, add-commit-push.
-*/
-
 /*I am prompting my user for a YES or NO answer to each of the next three questions.
 If the answer is correct, I increment the variable storing the correct number of answers
 and I am loggng the index of the correct answer for use later.  If the answer is wrong,
-I am saving the index number of the wrong answer. */
+I am saving the index number of the wrong answer.  I am also proving feedback to my user
+so they know if they got the answer correct and what the correct answer is. */
 var firstQuestionResponse= prompt("Do you think I like to backpack?").toUpperCase();
 	if(firstQuestionResponse === "YES" || firstQuestionResponse === "Y" ){
 		amountOfCorrectAnswers += 1;
@@ -58,6 +49,8 @@ console.log("This is how many wrong answers were added: " + indexOfWrongAnswers.
 //debugging to make sure correct answers are being recorded
 console.log("This is how many correct answers were added: " + amountOfCorrectAnswers);
 //I did not have to enter the summary because I did it on day 1			
+
+//I am proving a final set(s) of feedback on how they did on the game
 alert("You got " + amountOfCorrectAnswers + " of 3 answers correct.  Thanks for playing");
 	if (indexOfWrongAnswers.length === 0) {
 		alert("Congratulations, you got all the answers correct. You get extra credit");}

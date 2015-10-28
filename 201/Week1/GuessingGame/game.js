@@ -10,7 +10,7 @@ var correctAnswerArray = ["You answered question 1 correctly, I do enjoy backpac
 
 confirm("Welcome to the Guessing Game.  Are you ready to play?");
 
-/*I am prompting my user for a YES or NO answer to each of the next three questions.
+/*I  am prompting my user for a YES or NO answer to each of the next three questions.
 If the answer is correct, I increment the variable storing the correct number of answers
 and I am loggng the index of the correct answer for use later.  If the answer is wrong,
 I am saving the index number of the wrong answer.  I am also proving feedback to my user

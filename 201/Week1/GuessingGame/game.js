@@ -57,9 +57,9 @@ var thirdQuestionResponse= prompt("Do you think I like to cook?").toUpperCase();
 console.log("This is how many wrong answers were added: " + indexOfWrongAnswers.length);
 //debugging to make sure correct answers are being recorded
 console.log("This is how many correct answers were added: " + amountOfCorrectAnswers);
-			
-alert("You got " + amountOfCorrectAnswers + " of 3 answers correct");
+//I did not have to enter the summary because I did it on day 1			
+alert("You got " + amountOfCorrectAnswers + " of 3 answers correct.  Thanks for playing");
 	if (indexOfWrongAnswers.length === 0) {
-		alert("Congratulations, you got all the answers correct");}
+		alert("Congratulations, you got all the answers correct. You get extra credit");}
 		
 

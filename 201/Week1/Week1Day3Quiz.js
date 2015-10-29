@@ -8,30 +8,36 @@ C. In each JS function, use console.log() to print the function’s name and its
 name(s) and value(s).
 */
 
-
+//this is "function B"
 function rectangleWidth(width) {
-	return width * 2;
 	console.log("My function name is rectangleWidth,"+ 
 			" my parameter is width.  The values of the parameter is " + 
 			width);
+	return width * 2;	
 }
+
+//this is "function C"
 function rectangleHeigth(heigth) {
-	return heigth * 2;
 	console.log("My function name is rectangleHeigth,"+ 
 			" my parameter is heigth.  The values of the parameters is " + 
 			heigth);
+	return heigth * 2;	
 }
-function rectangleArea(width, heigth) {
+
+//This is "function A"
+function doubleRectangleArea(width, heigth) {
 	var doubleWidth = rectangleWidth(width);
 	var doubleHeigth =rectangleHeigth(heigth);
 	var myArea= doubleWidth *  doubleHeigth;
 	console.log("My function name is rectangleArea,"+ 
-			" my parameters are width and heigth.  The values of those parameters are" + 
+			" my parameters are width and heigth.  The values of those parameters are " + 
 			width + " and " + heigth);
 	return myArea;
 }
 
 
-var myNewrectangle = rectangleArea(2, 10);
-console.log("The area of the rectangle is: " + myNewrectangle);
+var myNewrectangle = doubleRectangleArea(14.5, 10.2);
+console.log("The area of the rectangle is: " + myNewrectangle + " units");
+
+
 

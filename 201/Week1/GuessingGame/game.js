@@ -24,10 +24,14 @@ var firstQuestionResponse= prompt("Do you think I like to backpack? Type Yes or 
 	if(firstQuestionResponse === "YES" || firstQuestionResponse === "Y" ){
 		amountOfCorrectAnswers += 1;
 		indexOfRightAnswers.push(0);
-		alert(correctAnswerArray[0]);
+		var msg1 = document.getElementById("q1");
+		msg1.innerHTML = correctAnswerArray[0];
+		//alert(correctAnswerArray[0]);
 	} else  {
 		indexOfWrongAnswers.push(0);
-		alert(incorrectAnswerArray[0]);
+		var msg1 = document.getElementById('q1');
+		msg1.innerHTML = incorrectAnswerArray[0];
+		//alert(incorrectAnswerArray[0]);
 	}
 }
 
@@ -36,10 +40,14 @@ var secondQuestionResponse= prompt("Do you think I like to run? Type Yes or No")
 	if(secondQuestionResponse === "YES" || secondQuestionResponse === "Y"){
 		amountOfCorrectAnswers += 1;
 		indexOfRightAnswers.push(1);
-		alert(correctAnswerArray[1]);
+		var msg2 = document.getElementById('q2');
+		msg2.innerHTML=correctAnswerArray[1];
+		//alert(correctAnswerArray[1]);
 	} else {
 		indexOfWrongAnswers.push(1);
-		alert(incorrectAnswerArray[1]);
+		var msg2 = document.getElementById('q2');
+		msg2.innerHTML=incorrectAnswerArray[1];
+		//alert(incorrectAnswerArray[1]);
 	}
 }
 
@@ -48,10 +56,14 @@ var thirdQuestionResponse= prompt("Do you think I like to cook? Type Yes or No")
 	if(thirdQuestionResponse === "YES"  || thirdQuestionResponse === "Y"){
 		amountOfCorrectAnswers += 1;
 		indexOfRightAnswers.push(2);
-		alert(correctAnswerArray[2]);
+		var msg3 = document.getElementById('q3');
+		msg3.innerHTML = correctAnswerArray[2];
+		//alert(correctAnswerArray[2]);
 	} else {
 		indexOfWrongAnswers.push(2);
-		alert(incorrectAnswerArray[2]);
+		var msg3 = document.getElementById('q3');
+		msg3.innerHTML = incorrectAnswerArray[2];
+		//alert(incorrectAnswerArray[2]);
 	}
 }
 //debugging to make sure push command is working

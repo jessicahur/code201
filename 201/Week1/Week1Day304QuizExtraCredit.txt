@@ -1,0 +1,15 @@
+Question #3:
+	rmdir = removes the directory(s) that you specific;
+	cat = reads a file and writes them to standard output.  By default, the screen is standard output.;
+	less = provides a smaller subset of data to the screen at one time.  Tis helps when you have a long file and want to step through it.;
+	ln = it creates a link to a file.  As an example, when we installed sublime we created a link to the application file and put the link in our usr/bin directory;
+	file = provides you with information on the type of file you have.  As an example, when you file a fiel with the extension .pdf it will tell you that you have a PDF document and the PDF version.;
+	which;
+	du = it will show the directories.  If you use the -d option, it can drill down firther than the current directory.;
+	df = it shows disk availability data;
+	top = it takes periodic snapshots of the running processes and shows them to you;
+
+Question #4:
+What is a shell?  A shell is a very efficient (low overhead) means of interacting with your computer system by using input from the keep board.  It is not GUI driven.
+A shell different than bash: bourne
+difference between the two shells:  Bash (the Bourne-Again shell) was developed from the bourne shell. Bash is a superset of the bourne shell, taking what was in bourne and adding additional capability over the years.

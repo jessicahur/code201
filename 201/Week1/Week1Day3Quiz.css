@@ -1,9 +1,51 @@
+#top {
+	float: left;
+	width: 259px;
+	margin-left: 5px;
+	margin-right: 10px;
+	background-color: red;
+	color: white;
+	border: 3px solid #0043FF;
+	display: inline-block;
+	clear: left;
+
+}
+#top p {
+	padding: 15px 15px 15px 15px;
+
+}
+#middle {
+	float: left;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: 5px;
+	width: 600px;
+	background-color: rgba(0, 0, 255, 0.28);
+	display: block;
+}
+#bottom {
+	float: left;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: 5px;
+	width: 600px;
+	background-color: rgba(0, 255, 255, 0.28);
+	display: inline-block;
+}
+
+}
 ol {
-	font-size: .5em;
+	font-family: Helvetica;
+	font-size: 1.75em;
+	background-color: grey;
+	padding-right: 120pt;
+	text-align: left;
 	}
 
 #secondPara {
-	font-color: red;
+	color: red;
+	padding: 15px;
+	margin-right ;
 	}
 			
 .thirdPara {

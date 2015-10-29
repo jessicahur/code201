@@ -4,19 +4,13 @@
 		<meta charset="utf-8">
 		<title>Week1Day3Quiz"</title>
 		<style>
-			
-			* {
-				font-family: Arial, sans-serif;
-
-			}
 			h1 h2 h3 {
 				font-weight: bold;
-
-
 			}
 
 			h2 > p {
 				font-style: oblique;
+				background-color: ff0000;
 			}
 
 			#smallPrint {
@@ -26,21 +20,32 @@
 			.lastPara {
 				font-family: "Times New Roman";
 			}
+			/*
+			* {
+				color: red;
+
+			}
+			*/
 			
 		</style>
 		<link rel="stylesheet" type="text/css" href="Week1Day3Quiz.css">
 		<script src="Week1Day3Quiz.js"></script>
 	</head>
 	<body>
+		<div id="top">
+			<!--Photo was downloaded from creative commons site-->
+			<img src="img/jscript.jpeg">
 		<h1>Options</h1>
 		<p>Update the index not only where the working tree has a file
            matching  but also where the index already has an entry.
            This adds, modifies, and removes index entries to match the working
            tree.</p>
-		<h2>PathSpec</h2>
-		<p id="smallPrint"> If no  is given when -A option is used, all files in the
+		<h2>PathSpec<p id="smallPrint"></h2>
+		<p> If no  is given when -A option is used, all files in the
            entire working tree are updated (old versions of Git used to limit
            the update to the current directory and its subdirectories)</p>
+		</div>
+		<div id="middle">
 		<h3>Git</h3>
 		<p class="lastPara">Files to add content from. Fileglobs (e.g.  *.c) can be given to
            add all matching files. Also a leading directory name (e.g.  dir to
@@ -56,6 +61,8 @@
            		<li>number one</li>
            		<li>number two</li>
            </ol>
+         </div>
+         <div id="bottom">
            <h1>Options</h1>
 		<p class="test3">Update the index not only where the working tree has a file
            matching  but also where the index already has an entry.
@@ -80,5 +87,6 @@
            		<li>number one</li>
            		<li>number two</li>
            </ol>
+       </div>
 	</body>
 	</html>

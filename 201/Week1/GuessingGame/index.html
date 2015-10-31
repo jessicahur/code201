@@ -3,12 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<title>The Guessing Game</title>
+    <style type="text/css">
+    *{
+      background-color: AntiqueWhite;
+    }
+    .wrong{
+      color: red;
+    }
+    .right{
+      color: green;
+    }
 
+    </style>
 	</head>
 	<body>
-  <p id="q1"> The answer to question #1 will appear here after you answer.</p>
-  <p id='q2'> The answer to question #2 will appear here after you answer.</p>
-  <p id='q3'> The answer to question #3 will appear here after you answer.</p>
+  <p id="q1" class="normal"> The answer to question #1 will appear here after you answer.</p>
+  <p id='q2' class="normal"> The answer to question #2 will appear here after you answer.</p>
+  <p id='q3' class="normal"> The answer to question #3 will appear here after you answer.</p>
   <script src="game.js"></script>
 	</body>
 </html>

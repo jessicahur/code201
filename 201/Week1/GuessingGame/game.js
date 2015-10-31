@@ -5,9 +5,9 @@ var indexOfRightAnswers = [];
 var incorrectAnswerArray = ["You got question #1 wrong, I like to backpack",
 							"You got question #2 wrong, I like to run",
 							"You got question #3 wrong, I like to cook"];
-var correctAnswerArray = ["You answered question 1 correctly, I do enjoy backpacking",
-						  	"You answered question 2 correctly, I do enjoy running",
-						  	"You answered question 3 correctly, I do enjoy cooking"]
+var correctAnswerArray = ["You answered question 1 correctly, I do enjoy backpacking <img src='../img/jscript.jpeg'>",
+						  	"You answered question 2 correctly, I do enjoy running <img src='../img/jscript.jpeg'>",
+						  	"You answered question 3 correctly, I do enjoy cooking <img src='../img/jscript.jpeg'>"]
 
 confirm("Welcome to the Guessing Game.  Are you ready to play?");
 
@@ -26,11 +26,13 @@ var firstQuestionResponse= prompt("Do you think I like to backpack? Type Yes or 
 		indexOfRightAnswers.push(0);
 		var msg1 = document.getElementById("q1");
 		msg1.innerHTML = correctAnswerArray[0];
+		msg1.className = "right";
 		//alert(correctAnswerArray[0]);
 	} else  {
 		indexOfWrongAnswers.push(0);
 		var msg1 = document.getElementById('q1');
 		msg1.innerHTML = incorrectAnswerArray[0];
+		msg1.className = "wrong";
 		//alert(incorrectAnswerArray[0]);
 	}
 }
@@ -42,11 +44,13 @@ var secondQuestionResponse= prompt("Do you think I like to run? Type Yes or No")
 		indexOfRightAnswers.push(1);
 		var msg2 = document.getElementById('q2');
 		msg2.innerHTML=correctAnswerArray[1];
+		msg2.className = "right";
 		//alert(correctAnswerArray[1]);
 	} else {
 		indexOfWrongAnswers.push(1);
 		var msg2 = document.getElementById('q2');
 		msg2.innerHTML=incorrectAnswerArray[1];
+		msg2.className = "wrong";
 		//alert(incorrectAnswerArray[1]);
 	}
 }
@@ -58,11 +62,13 @@ var thirdQuestionResponse= prompt("Do you think I like to cook? Type Yes or No")
 		indexOfRightAnswers.push(2);
 		var msg3 = document.getElementById('q3');
 		msg3.innerHTML = correctAnswerArray[2];
+		msg3.className = "right";
 		//alert(correctAnswerArray[2]);
 	} else {
 		indexOfWrongAnswers.push(2);
 		var msg3 = document.getElementById('q3');
 		msg3.innerHTML = incorrectAnswerArray[2];
+		msg3.className = "wrong";
 		//alert(incorrectAnswerArray[2]);
 	}
 }
